@@ -1,43 +1,44 @@
-{'OrderDate': 2021-01-06, 'Region': 'East', 'Rep': 'Jones', 'Item': 'Pencil', 'Units': 95, 'Unit Cost': 1.99, 'Total': 189.05},
-{'OrderDate': 2021-01-23, 'Region': 'Central', 'Rep': 'Kivell', 'Item': 'Binder', 'Units': 50, 'Unit Cost': 19.99, 'Total': 999.5},
-{'OrderDate': 2021-02-09, 'Region': 'Central', 'Rep': 'Jardine', 'Item': 'Pencil', 'Units': 36, 'Unit Cost': 4.99, 'Total': 179.64},
-{'OrderDate': 2021-02-26, 'Region': 'Central', 'Rep': 'Gill', 'Item': 'Pen', 'Units': 27, 'Unit Cost': 19.99, 'Total': 539.73},
-{'OrderDate': 2021-03-15, 'Region': 'West', 'Rep': 'Sorvino', 'Item': 'Pencil', 'Units': 56, 'Unit Cost': 2.99, 'Total': 167.44},
-{'OrderDate': 2021-04-01, 'Region': 'East', 'Rep': 'Jones', 'Item': 'Binder', 'Units': 60, 'Unit Cost': 4.99, 'Total': 299.4},
-{'OrderDate': 2021-04-18, 'Region': 'Central', 'Rep': 'Andrews', 'Item': 'Pencil', 'Units': 75, 'Unit Cost': 1.99, 'Total': 149.25},
-{'OrderDate': 2021-05-05, 'Region': 'Central', 'Rep': 'Jardine', 'Item': 'Pencil', 'Units': 90, 'Unit Cost': 4.99, 'Total': 449.1},
-{'OrderDate': 2021-05-22, 'Region': 'West', 'Rep': 'Thompson', 'Item': 'Pencil', 'Units': 32, 'Unit Cost': 1.99, 'Total': 63.68},
-{'OrderDate': 2021-06-08, 'Region': 'East', 'Rep': 'Jones', 'Item': 'Binder', 'Units': 60, 'Unit Cost': 8.99, 'Total': 539.4},
-{'OrderDate': 2021-06-25, 'Region': 'Central', 'Rep': 'Morgan', 'Item': 'Pencil', 'Units': 90, 'Unit Cost': 4.99, 'Total': 449.1},
-{'OrderDate': 2021-07-12, 'Region': 'East', 'Rep': 'Howard', 'Item': 'Binder', 'Units': 29, 'Unit Cost': 1.99, 'Total': 57.71},
-{'OrderDate': 2021-07-29, 'Region': 'East', 'Rep': 'Parent', 'Item': 'Binder', 'Units': 81, 'Unit Cost': 19.99, 'Total': 1619.19},
-{'OrderDate': 2021-08-15, 'Region': 'East', 'Rep': 'Jones', 'Item': 'Pencil', 'Units': 35, 'Unit Cost': 4.99, 'Total': 174.65},
-{'OrderDate': 2021-09-01, 'Region': 'Central', 'Rep': 'Smith', 'Item': 'Desk', 'Units': 2, 'Unit Cost': 125.0, 'Total': 250.0},
-{'OrderDate': 2021-09-18, 'Region': 'East', 'Rep': 'Jones', 'Item': 'Pen Set', 'Units': 16, 'Unit Cost': 15.99, 'Total': 255.84},
-{'OrderDate': 2021-10-05, 'Region': 'Central', 'Rep': 'Morgan', 'Item': 'Binder', 'Units': 28, 'Unit Cost': 8.99, 'Total': 251.72},
-{'OrderDate': 2021-10-22, 'Region': 'East', 'Rep': 'Jones', 'Item': 'Pen', 'Units': 64, 'Unit Cost': 8.99, 'Total': 575.36},
-{'OrderDate': 2021-11-08, 'Region': 'East', 'Rep': 'Parent', 'Item': 'Pen', 'Units': 15, 'Unit Cost': 19.99, 'Total': 299.85},
-{'OrderDate': 2021-11-25, 'Region': 'Central', 'Rep': 'Kivell', 'Item': 'Pen Set', 'Units': 96, 'Unit Cost': 4.99, 'Total': 479.04},
-{'OrderDate': 2021-12-12, 'Region': 'Central', 'Rep': 'Smith', 'Item': 'Pencil', 'Units': 67, 'Unit Cost': 1.29, 'Total': 86.43},
-{'OrderDate': 2021-12-29, 'Region': 'East', 'Rep': 'Parent', 'Item': 'Pen Set', 'Units': 74, 'Unit Cost': 15.99, 'Total': 1183.26},
-{'OrderDate': 2022-01-15, 'Region': 'Central', 'Rep': 'Gill', 'Item': 'Binder', 'Units': 46, 'Unit Cost': 8.99, 'Total': 413.54},
-{'OrderDate': 2022-02-01, 'Region': 'Central', 'Rep': 'Smith', 'Item': 'Binder', 'Units': 87, 'Unit Cost': 15.0, 'Total': 1305.0},
-{'OrderDate': 2022-02-18, 'Region': 'East', 'Rep': 'Jones', 'Item': 'Binder', 'Units': 4, 'Unit Cost': 4.99, 'Total': 19.96},
-{'OrderDate': 2022-03-07, 'Region': 'West', 'Rep': 'Sorvino', 'Item': 'Binder', 'Units': 7, 'Unit Cost': 19.99, 'Total': 139.93},
-{'OrderDate': 2022-03-24, 'Region': 'Central', 'Rep': 'Jardine', 'Item': 'Pen Set', 'Units': 50, 'Unit Cost': 4.99, 'Total': 249.5},
-{'OrderDate': 2022-04-10, 'Region': 'Central', 'Rep': 'Andrews', 'Item': 'Pencil', 'Units': 66, 'Unit Cost': 1.99, 'Total': 131.34},
-{'OrderDate': 2022-04-27, 'Region': 'East', 'Rep': 'Howard', 'Item': 'Pen', 'Units': 96, 'Unit Cost': 4.99, 'Total': 479.04},
-{'OrderDate': 2022-05-14, 'Region': 'Central', 'Rep': 'Gill', 'Item': 'Pencil', 'Units': 53, 'Unit Cost': 1.29, 'Total': 68.37},
-{'OrderDate': 2022-05-31, 'Region': 'Central', 'Rep': 'Gill', 'Item': 'Binder', 'Units': 80, 'Unit Cost': 8.99, 'Total': 719.2},
-{'OrderDate': 2022-06-17, 'Region': 'Central', 'Rep': 'Kivell', 'Item': 'Desk', 'Units': 5, 'Unit Cost': 125.0, 'Total': 625.0},
-{'OrderDate': 2022-07-04, 'Region': 'East', 'Rep': 'Jones', 'Item': 'Pen Set', 'Units': 62, 'Unit Cost': 4.99, 'Total': 309.38},
-{'OrderDate': 2022-07-21, 'Region': 'Central', 'Rep': 'Morgan', 'Item': 'Pen Set', 'Units': 55, 'Unit Cost': 12.49, 'Total': 686.95},
-{'OrderDate': 2022-08-07, 'Region': 'Central', 'Rep': 'Kivell', 'Item': 'Pen Set', 'Units': 42, 'Unit Cost': 23.95, 'Total': 1005.9},
-{'OrderDate': 2022-08-24, 'Region': 'West', 'Rep': 'Sorvino', 'Item': 'Desk', 'Units': 3, 'Unit Cost': 275.0, 'Total': 825.0},
-{'OrderDate': 2022-09-10, 'Region': 'Central', 'Rep': 'Gill', 'Item': 'Pencil', 'Units': 7, 'Unit Cost': 1.29, 'Total': 9.03},
-{'OrderDate': 2022-09-27, 'Region': 'West', 'Rep': 'Sorvino', 'Item': 'Pen', 'Units': 76, 'Unit Cost': 1.99, 'Total': 151.24},
-{'OrderDate': 2022-10-14, 'Region': 'West', 'Rep': 'Thompson', 'Item': 'Binder', 'Units': 57, 'Unit Cost': 19.99, 'Total': 1139.43},
-{'OrderDate': 2022-10-31, 'Region': 'Central', 'Rep': 'Andrews', 'Item': 'Pencil', 'Units': 14, 'Unit Cost': 1.29, 'Total': 18.06},
-{'OrderDate': 2022-11-17, 'Region': 'Central', 'Rep': 'Jardine', 'Item': 'Binder', 'Units': 11, 'Unit Cost': 4.99, 'Total': 54.89},
-{'OrderDate': 2022-12-04, 'Region': 'Central', 'Rep': 'Jardine', 'Item': 'Binder', 'Units': 94, 'Unit Cost': 19.99, 'Total': 1879.06},
-{'OrderDate': 2022-12-21, 'Region': 'Central', 'Rep': 'Andrews', 'Item': 'Binder', 'Units': 28, 'Unit Cost': 4.99, 'Total': 139.72}
+OrderDate,Region,Rep,Item,Units,UnitCost,Total
+1/6/21,East,Jones,Pencil,95,1.99,189.05
+1/23/21,Central,Kivell,Binder,50,19.99,999.50
+2/9/21,Central,Jardine,Pencil,36,4.99,179.64
+2/26/21,Central,Gill,Pen,27,19.99,539.73
+3/15/21,West,Sorvino,Pencil,56,2.99,167.44
+4/1/21,East,Jones,Binder,60,4.99,299.40
+4/18/21,Central,Andrews,Pencil,75,1.99,149.25
+5/5/21,Central,Jardine,Pencil,90,4.99,449.10
+5/22/21,West,Thompson,Pencil,32,1.99,63.68
+6/8/21,East,Jones,Binder,60,8.99,539.40
+6/25/21,Central,Morgan,Pencil,90,4.99,449.10
+7/12/21,East,Howard,Binder,29,1.99,57.71
+7/29/21,East,Parent,Binder,81,19.99,1619.19
+8/15/21,East,Jones,Pencil,35,4.99,174.65
+9/1/21,Central,Smith,Desk,2,125.00,250.00
+9/18/21,East,Jones,PenSet,16,15.99,255.84
+10/5/21,Central,Morgan,Binder,28,8.99,251.72
+10/22/21,East,Jones,Pen,64,8.99,575.36
+11/8/21,East,Parent,Pen,15,19.99,299.85
+11/25/21,Central,Kivell,PenSet,96,4.99,479.04
+12/12/21,Central,Smith,Pencil,67,1.29,86.43
+12/29/21,East,Parent,PenSet,74,15.99,1183.26
+1/15/22,Central,Gill,Binder,46,8.99,413.54
+2/1/22,Central,Smith,Binder,87,15.00,1305.00
+2/18/22,East,Jones,Binder,4,4.99,19.96
+3/7/22,West,Sorvino,Binder,7,19.99,139.93
+3/24/22,Central,Jardine,PenSet,50,4.99,249.50
+4/10/22,Central,Andrews,Pencil,66,1.99,131.34
+4/27/22,East,Howard,Pen,96,4.99,479.04
+5/14/22,Central,Gill,Pencil,53,1.29,68.37
+5/31/22,Central,Gill,Binder,80,8.99,719.20
+6/17/22,Central,Kivell,Desk,5,125.00,625.00
+7/4/22,East,Jones,PenSet,62,4.99,309.38
+7/21/22,Central,Morgan,PenSet,55,12.49,686.95
+8/7/22,Central,Kivell,PenSet,42,23.95,1005.90
+8/24/22,West,Sorvino,Desk,3,275.00,825.00
+9/10/22,Central,Gill,Pencil,7,1.29,9.03
+9/27/22,West,Sorvino,Pen,76,1.99,151.24
+10/14/22,West,Thompson,Binder,57,19.99,1139.43
+10/31/22,Central,Andrews,Pencil,14,1.29,18.06
+11/17/22,Central,Jardine,Binder,11,4.99,54.89
+12/4/22,Central,Jardine,Binder,94,19.99,1879.06
+12/21/22,Central,Andrews,Binder,28,4.99,139.72
