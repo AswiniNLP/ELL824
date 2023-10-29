@@ -1,0 +1,172 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Embedding Vega-Lite</title>
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.25.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.16.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.22.2"></script>
+  </head>
+  <body>
+    <div class="header">
+      <h2>ELL824: SELECTED TOPICS IN INFORMATION PROCESSING - II ( Data Visualization)</br>Name: Aswin Kumar Padhi (EEZ238359)</br></br></br></h2>
+      <h3></h3>
+    </div>
+    
+    <div>
+      <p>
+        &emsp;&emsp; <b>Q1.</b> Load the HW data.</br></br>
+        &emsp;&emsp; <b>Answer:</b> The HW_Excel.csv is uploaded at Github and the corresponding link is used in VegaLite code to retrieve the data.</br>
+      </p>
+    </div>
+    <div id="vis">
+      
+    </div>
+    
+    <div style="text-align:right;">
+    <script type="text/javascript">
+        
+      var combined = {
+        $schema: "https://vega.github.io/schema/vega-lite/v5.json",
+        
+        data: {
+          "url":"https://raw.githubusercontent.com/AswiniNLP/ELL824/main/HW_Excel.csv"
+        },
+
+        vconcat: [
+          {
+            "title": {
+                  "text": "Q2",
+                  "anchor": "middle", "orient": "top"
+                  },
+                  mark: { "type":"bar", "cornerRadiusEnd": 5, "color":"silver", "tooltip": true },
+                  encoding: {
+                    x: {field: "Rep", sort:"-y"},
+                    y: {aggregate: "sum", field:"Total"},
+                    
+                    "color": {"aggregate": "sum", "field": "Total"}
+                  }
+          }, // Q2
+          {
+            "title": {
+                  "text": "Q3",
+                  "anchor": "middle", "orient": "top"
+                  },
+            
+                mark: {type: "arc", "tooltip": true},
+                  
+                encoding: {
+                  theta: {field: "Units", type: "quantitative",aggregate: "sum"},
+                  color: {field: "Item", type: "nominal", "stack": true}
+                }
+          }, // Q3
+          {
+                "layer": [
+                {
+                  "title": {
+                          "text": "Q4",
+                          "anchor": "middle", "orient": "top"
+                          },
+
+                  "mark": {"type": "point", "filled": true, "tooltip": true},
+                  
+                  "encoding": {
+                    "x": {"field": "Units", "type": "quantitative"},
+                    "y": {"field": "UnitCost", "type": "quantitative"},
+                    color: {field: "Item", type: "nominal",legend: null},
+                  }
+                },
+              {
+                "mark": {"type": "line", "color": "firebrick", "tooltip": true},
+                "transform": [
+                  {"regression": "UnitCost", "on": "Units"}
+                ],
+                "encoding": {
+                  "x": {"field": "Units", "type": "quantitative"},
+                  "y": {"field": "UnitCost", "type": "quantitative"}
+                }
+              },
+              {
+                "transform": [
+                  {
+                    "regression": "UnitCost",
+                    "on": "Units",
+                    "params": true
+                  },
+                  {"calculate": "'R²: '+format(datum.rSquared, '.2f')", "as": "R2"}
+                ],
+                "mark": {
+                  "type": "text",
+                  "color": "firebrick",
+                  "x": "width",
+                  "align": "right",
+                  "y": -5,
+                  "tooltip": true
+                },
+                "encoding": {"text": {"type": "nominal", "field": "R2"}}
+              }
+          ]
+      }, //Q4
+      {
+            "title": {
+                  "text": "Q5",
+                  "anchor": "middle", "orient": "top"
+                  },
+            mark: {
+              type: "line", "tooltip": true
+            },
+            "width": 350,
+          // "height": 200,
+            encoding: {
+              y: {field: "Total", type: "quantitative",aggregate: 'sum'},
+              x: {field: "OrderDate",timeUnit: "yearmonth",type: "temporal", axis: {labelAngle: 1}}
+              
+            }
+      }, // Q5
+      
+      {
+        layer: [
+
+        {
+          mark: { "type": "bar", "tooltip": true },
+          
+          "title": {
+            "text": "Q6 ( using bin )",
+            "anchor": "middle", "orient": "top"
+          },
+          encoding: {
+            
+            x: {
+              bin: true,
+              field: "Units"
+            },
+            y: {aggregate: "count",axis: {orient: "left", title: "Count"}},
+            "color": {"aggregate": "count", "field": "Units"}
+
+          }
+
+        },
+        {
+          mark: { "type":"rule", "tooltip": true},
+          "width": 450,
+          "height": 200,
+          
+          encoding: {
+            y: {field: "Units", aggregate: "mean", axis: {orient: "right"} },
+            size: {value: 0.5},
+            "color": {"value": "red"},
+
+
+          }
+        }
+
+        ],
+        resolve: {scale: {y: "independent"}}
+      } // Q6
+
+        ]
+    }
+      vegaEmbed("#vis", combined);
+    </script>
+  </div>
+  </body>
+</html>
