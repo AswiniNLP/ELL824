@@ -8,20 +8,20 @@
   </head>
   <body>
     <div class="header">
-      <h2>ELL824: SELECTED TOPICS IN INFORMATION PROCESSING - II ( Data Visualization)</br>Name: Aswin Kumar Padhi (EEZ238359)</br></br></br></h2>
+      <h2>ELL824: SELECTED TOPICS IN INFORMATION PROCESSING - II ( Data Visualization)</br>Name: Aswini Kumar Padhi (EEZ238359)</br></br></br></h2>
       <h3></h3>
     </div>
     
     <div>
       <p>
-        &emsp;&emsp; <b>Q1.</b> Load the HW data.</br></br>
+        &emsp;&emsp; <b>Q1.</b> Loaded the Home Work data.</br></br>
         &emsp;&emsp; <b>Answer:</b> The HW_Excel.csv is uploaded at Github and the corresponding link is used in VegaLite code to retrieve the data.</br>
       </p>
     </div>
     <div id="vis">
       
     </div>
-    
+    q
     <div style="text-align:right;">
     <script type="text/javascript">
         
@@ -29,31 +29,32 @@
         $schema: "https://vega.github.io/schema/vega-lite/v5.json",
         
         data: {
-          "url":"https://raw.githubusercontent.com/AswiniNLP/ELL824/main/HW_Excel.csv"
+          "url":"https://raw.githubusercontent.com/PalGitts/ELL824/main/HW_Excel.csv"
         },
-
-        vconcat: [
-          {
-            "title": {
-                  "text": "Q2",
-                  "anchor": "middle", "orient": "top"
-                  },
-                  mark: { "type":"bar", "cornerRadiusEnd": 5, "color":"silver", "tooltip": true },
-                  encoding: {
-                    x: {field: "Rep", sort:"-y"},
-                    y: {aggregate: "sum", field:"Total"},
-                    
-                    "color": {"aggregate": "sum", "field": "Total"}
-                  }
-          }, // Q2
-          {
+    
+            "columns": 3,
+            "concat": [
+            {
+              "title": {
+                    "text": "Q2",
+                    "anchor": "middle", "orient": "top"
+                    },
+                    mark: { "type":"bar", "cornerRadiusEnd": 5, "color":"silver", "tooltip": true },
+                    encoding: {
+                      x: {field: "Rep", sort:"-y"},
+                      y: {aggregate: "sum", field:"Total"},
+                      
+                      "color": {"aggregate": "sum", "field": "Total"}
+                    }
+            }, // Q2
+                      {
             "title": {
                   "text": "Q3",
                   "anchor": "middle", "orient": "top"
                   },
-            
+           
                 mark: {type: "arc", "tooltip": true},
-                  
+                 
                 encoding: {
                   theta: {field: "Units", type: "quantitative",aggregate: "sum"},
                   color: {field: "Item", type: "nominal", "stack": true}
@@ -68,7 +69,7 @@
                           },
 
                   "mark": {"type": "point", "filled": true, "tooltip": true},
-                  
+                 
                   "encoding": {
                     "x": {"field": "Units", "type": "quantitative"},
                     "y": {"field": "UnitCost", "type": "quantitative"},
@@ -119,22 +120,22 @@
             encoding: {
               y: {field: "Total", type: "quantitative",aggregate: 'sum'},
               x: {field: "OrderDate",timeUnit: "yearmonth",type: "temporal", axis: {labelAngle: 1}}
-              
+             
             }
       }, // Q5
-      
+     
       {
         layer: [
 
         {
           mark: { "type": "bar", "tooltip": true },
-          
+         
           "title": {
             "text": "Q6 ( using bin )",
             "anchor": "middle", "orient": "top"
           },
           encoding: {
-            
+           
             x: {
               bin: true,
               field: "Units"
@@ -149,7 +150,7 @@
           mark: { "type":"rule", "tooltip": true},
           "width": 450,
           "height": 200,
-          
+         
           encoding: {
             y: {field: "Units", aggregate: "mean", axis: {orient: "right"} },
             size: {value: 0.5},
@@ -163,7 +164,8 @@
         resolve: {scale: {y: "independent"}}
       } // Q6
 
-        ]
+
+                   ]
     }
       vegaEmbed("#vis", combined);
     </script>
